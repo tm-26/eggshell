@@ -1,0 +1,33 @@
+if (strcmp(input, "CWD") == 0) {
+                printf("%s", CWD);
+            }
+
+            if (strcmp(input, "SHELL") == 0) {
+                //SHELL = getenv("SHELL");
+                printf("%s", SHELL);
+            }
+
+
+            if (strcmp(input, "PATH") == 0) {
+                PATH = getenv("PATH");
+                printf("%s", PATH);
+            }
+
+            if (strcmp(input, "USER") == 0) {
+                USER = getlogin();
+                printf("%s", USER);
+
+            }
+
+            if (strcmp(input, "HOME") == 0) {
+                HOME = getenv("HOME");
+                printf("%s", HOME);
+            }
+
+            if (strcmp(input, "TERMINAL") == 0) {
+                printf("%s", TERMINAL);
+            }
+
+            if (strcmp(input, "PROMPT") == 0) {
+                printf("%s", PROMPT);
+            }
